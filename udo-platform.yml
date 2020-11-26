@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udo-platfrom
+  namespace: udo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: udo-platfrom
+  template:
+    metadata:
+      labels:
+        run: udo-platfrom
+    spec:
+      imagePullSecrets:
+      - name: $SECRET_NAME 
+      containers:
+      - image: $IMAGE_NAME
+        name: udo-platfrom
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: /etc/nginx/conf.d/default.conf
+          name: config-volume
+          subPath: default.conf
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: nginx-config-ui
+        name: config-volume
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: udo-platfrom
+  namespace: udo
+spec:
+  type: NodePort
+  selector:
+    run: udo-platfrom
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 8878

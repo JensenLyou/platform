@@ -1,0 +1,445 @@
+html,
+body {
+  color: #76787c;
+  background-color: #f7f7f7;
+  min-width: 1280px;
+  scroll-behavior:smooth; 
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.ver-top {
+  vertical-align: top;
+}
+.ver-middle {
+  vertical-align: middle;
+}
+
+// 常用字号
+.fs14 {
+  font-size: 14px;
+}
+.fs16 {
+  font-size: 16px;
+}
+.fs18 {
+  font-size: 18px;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fs22 {
+  font-size: 22px;
+}
+.fs30 {
+  font-size: 30px;
+}
+.fs36 {
+  font-size: 36px;
+}
+
+//  常用padding
+.pd-lr20 {
+  padding: 0 20px;
+}
+.pd-l20 {
+  padding-left: 20px;
+}
+.pd-l25 {
+  padding-left: 25px;
+}
+
+// 常用margin
+.mg-t16 {
+  margin-top: 16px;
+}
+.mg-t18 {
+  margin-top: 18px;
+}
+.mg-t20 {
+  margin-top: 20px;
+}
+.mg-t44 {
+  margin-top: 44px;
+}
+
+.mg-t50 {
+  margin-top: 50px;
+}
+
+.mg-t70 {
+  margin-top: 70px;
+}
+
+.mg-t78 {
+  margin-top: 78px;
+}
+.mg-l20 {
+  margin-left: 20px;
+}
+
+.mg-r10 {
+  margin-right: 10px;
+}
+.mg-r20 {
+  margin-right: 20px;
+}
+.mg-r30 {
+  margin-right: 30px;
+}
+.mg-r125 {
+  margin-right: 125px;
+}
+.mg-b10 {
+  margin-bottom: 10px;
+}
+.mg-b14 {
+  margin-bottom: 14px;
+}
+.mg-b16 {
+  margin-bottom: 16px;
+}
+
+.mg-b20 {
+  margin-bottom: 20px;
+}
+.mg-b25 {
+  margin-bottom: 25px;
+}
+.mg-b30 {
+  margin-bottom: 30px;
+}
+.mg-b35 {
+  margin-bottom: 35px;
+}
+.mg-b40 {
+  margin-bottom: 40px;
+}
+.mg-b50 {
+  margin-bottom: 50px;
+}
+.mg-b60 {
+  margin-bottom: 60px;
+}
+.mg-b65 {
+  margin-bottom: 65px;
+}
+.mg-b70 {
+  margin-bottom: 70px;
+}
+.mg-b80 {
+  margin-bottom: 80px;
+}
+
+.mg-b165 {
+  margin-bottom: 165px;
+}
+.hidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.relative {
+  position: relative;
+}
+
+.inblock {
+  display: inline-block;
+}
+.bnlock {
+  display: block;
+}
+
+.text-yellow {
+  color: #ffad2b;
+}
+.text-blue {
+  color: #1c87ff;
+}
+.text-red {
+  color: #e5004f;
+}
+.text-green {
+  color: #00e500;
+}
+.hover {
+  &:hover {
+    color: #409eff;
+  }
+}
+
+// 内容版心的宽
+.panel {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+//  public
+.public-title {
+  font-size: 18px;
+  color: #1e1f20;
+  font-weight: 400;
+}
+
+.public-border {
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.public-black-circle {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #262424;
+  border-radius: 7px;
+  margin-right: 10px;
+  .ver-middle;
+}
+
+.public-QR-box {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: rgba(32, 37, 45, 1);
+  border-radius: 5px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.steps-tips {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #fff1d6;
+  border-radius: 5px;
+  border: 1px solid #ffb932;
+  line-height: 2;
+  max-width: 800px;
+}
+
+.public-QR-tips {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff1d6;
+  border-radius: 5px;
+  border: 1px solid #ffb932;
+  line-height: 2;
+  margin-bottom: 24px;
+}
+
+.public-search-input {
+  width: 360px;
+}
+
+// 详情
+.detail-info {
+  padding: 10px 30px;
+  background-color: #f7f7f7;
+  line-height: 1.8;
+  border-radius: 10px;
+  > div {
+    padding: 5px 0;
+  }
+}
+
+.detail-text {
+  color: #1e1f20;
+}
+
+.detial-info-span {
+  float: right;
+  width: 500px;
+  text-align: right;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.el-icon-success.public {
+  color: #03d703;
+  font-size: 60px;
+}
+
+.el-dialog--center {
+  width: 550px !important;
+}
+
+.input-tips {
+  line-height: 1.2;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-between-items-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-between-items-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.public-look-Detail-btn {
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(
+    181deg,
+    rgba(69, 230, 203, 1),
+    rgba(25, 213, 227, 1)
+  );
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 2px;
+}
+
+// icon
+.hw26 {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.icon_contract {
+  .hw26;
+  background-image: url("./../assets/images/icon/cantract.png");
+}
+.icon_publish {
+  .hw26;
+  background-image: url("./../assets/images/icon/publish.png");
+}
+.icon_chain {
+  .hw26;
+  background-image: url("./../assets/images/icon/chain.png");
+}
+.icon_params {
+  .hw26;
+  background-image: url("./../assets/images/icon/params.png");
+}
+.icon_document {
+  .hw26;
+  background-image: url("./../assets/images/icon/document.png");
+}
+.icon_question {
+  .hw26;
+  background-image: url("./../assets/images/icon/question.png");
+}
+
+//  setps
+.public-steps {
+  .el-step__title {
+    color: #1e1f20 !important;
+    font-size: 18px;
+    line-height: 1;
+    margin: 16px 0 25px 0;
+    font-weight: 500;
+  }
+  .el-step__description {
+    width: 140px;
+    font-size: 14px;
+    padding-right: 0;
+  }
+  .el-step__head {
+    color: #409eff;
+    border-color: #409eff;
+  }
+}
+
+//  步骤
+.el-step__head {
+  .el-step__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.el-step__head.is-finish {
+  .el-step__icon {
+    border-color: #1c87ff;
+    background-color: #1c87ff;
+    .el-step__icon-inner {
+      color: #fff;
+    }
+  }
+}
+.el-step__title.is-wait {
+  color: #76787c;
+}
+.el-step__title.is-finish {
+  color: #1e1f20 !important;
+}
+.el-step__description.is-finish {
+  color: #76787c;
+}
+.el-step.is-horizontal .el-step__line {
+  top: 19px;
+}
+
+.el-step__head.is-wait {
+  .el-step__icon {
+    border-color: #a5abb2;
+    background-color: #a5abb2;
+    .el-step__icon-inner {
+      color: #fff;
+    }
+  }
+}
+
+.result-text {
+  color: #1e1f20;
+  font-size: 18px;
+}
+
+.el-step__head.is-success {
+  color: #1c87ff;
+  border-color: #1c87ff;
+}
+.el-step__title.is-success {
+  color: #1c87ff;
+}
